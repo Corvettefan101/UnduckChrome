@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Und*ck</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" id="main-tab-btn">Main</button>
+      <button class="tab-btn" id="settings-tab-btn">Settings</button>
+    </div>
+    <div class="tab-content" id="main-tab">
+      <h1>Und*ck</h1>
+      <p>DuckDuckGo's bang redirects are too slow. Add the following URL as a custom search engine to your browser. Enables <a href="https://duckduckgo.com/bangs" target="_blank">all of DuckDuckGo's bangs.</a></p>
+      <form id="unduck-search-form" class="unduck-search-form" autocomplete="off">
+        <input type="text" id="unduck-search-input" placeholder="Type your search (with bangs!)" />
+        <button type="submit" id="unduck-search-btn" title="Search">🔍</button>
+      </form>
+      <div class="custom-bangs-section">
+        <h2>Custom Bangs</h2>
+        <form id="add-bang-form" class="add-bang-form" autocomplete="off">
+          <input type="text" id="bang-key" placeholder="Bang (e.g., !yt)" maxlength="10" required />
+          <input type="text" id="bang-url" placeholder="URL (use %s for query)" required />
+          <button type="submit" id="add-bang-btn">Add</button>
+        </form>
+        <ul id="bangs-list" class="bangs-list"></ul>
+      </div>
+      <div class="credit">Original Unduck by <a href="https://unduck.link" target="_blank">Theo</a></div>
+    </div>
+    <div class="tab-content" id="settings-tab" style="display:none;">
+      <h2>Settings</h2>
+      <label class="switch">
+        <input type="checkbox" id="toggle-newtab">
+        <span class="slider"></span>
+      </label>
+      <span>Enable Unduck New Tab Screen</span>
+      <div id="reload-warning" style="display:none;">Please reload the extension for changes to take effect.</div>
+      <button id="reload-extension-btn" style="display:none;margin-top:10px;background:#232323;color:#eaeaea;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;">Reload Extension</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

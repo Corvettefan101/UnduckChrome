@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Und*ck New Tab</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body data-newtab>
+  <div class="container">
+    <h1>Und*ck</h1>
+    <p>DuckDuckGo's bang redirects are too slow. Enables <a href="https://duckduckgo.com/bangs" target="_blank">all of DuckDuckGo's bangs.</a></p>
+    <form id="unduck-search-form" class="unduck-search-form" autocomplete="off">
+      <input type="text" id="unduck-search-input" placeholder="Type your search (with bangs!)" />
+      <button type="submit" id="unduck-search-btn" title="Search">🔍</button>
+    </form>
+    <div id="recent-sites-section">
+      <h2>Recently Visited</h2>
+      <div id="recent-sites" class="recent-sites"></div>
+    </div>
+    <div class="credit">Original Unduck by <a href="https://unduck.link" target="_blank">Theo</a></div>
+    <div id="unduck-disabled-message" style="display:none; margin-top:2em;">
+      <h2>Unduck new tab is disabled</h2>
+      <p>Click below to open Google’s default new tab.</p>
+      <button id="open-google-newtab" style="padding:0.7em 2em; background:#232323; color:#eaeaea; border:none; border-radius:7px; font-size:1.2em; cursor:pointer;">Open Google New Tab</button>
+    </div>
+  </div>
+  <script src="newtab.js"></script>
+</body>
+</html>

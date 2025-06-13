@@ -1,0 +1,327 @@
+body {
+  background: #181818;
+  color: #eaeaea;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-width: 350px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  width: 100%;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.tab-btn {
+  padding: 6px 16px;
+  border: none;
+  background: #232323;
+  color: #eaeaea;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  font-weight: 500;
+  outline: none;
+  transition: background 0.2s;
+}
+.tab-btn.active {
+  background: #181818;
+  color: #fff;
+  font-weight: bold;
+}
+.tab-content {
+  background: #181818;
+  padding: 10px;
+  border-radius: 0 0 6px 6px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin-right: 8px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444;
+  transition: .4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #eaeaea;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+#reload-warning {
+  color: #ff4444;
+  margin-top: 10px;
+  font-weight: 500;
+}
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0.2em 0 0.3em 0;
+  letter-spacing: 0.03em;
+}
+p {
+  font-size: 1.4em;
+  margin: 0 0 1.2em 0;
+  color: #cccccc;
+}
+a {
+  color: #8ecae6;
+  text-decoration: underline;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232323;
+  border-radius: 8px;
+  padding: 0.5em 0.7em;
+  margin-top: 1em;
+}
+#search-url {
+  background: transparent;
+  border: none;
+  color: #eaeaea;
+  font-size: 1.1em;
+  width: 260px;
+  outline: none;
+  padding: 0.3em 0.2em;
+}
+#copy-btn {
+  background: none;
+  border: none;
+  color: #eaeaea;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-left: 0.5em;
+  transition: color 0.2s;
+}
+#copy-btn:hover {
+  color: #8ecae6;
+}
+.unduck-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5em;
+}
+#unduck-search-input {
+  background: #232323;
+  border: none;
+  color: #eaeaea;
+  font-size: 1.5em;
+  padding: 0.8em 1.3em;
+  border-radius: 8px 0 0 8px;
+  width: 400px;
+  outline: none;
+  height: 54px;
+  box-sizing: border-box;
+}
+#unduck-search-btn {
+  background: #232323;
+  border: none;
+  color: #eaeaea;
+  font-size: 1.5em;
+  padding: 0 1.3em;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#unduck-search-btn:hover {
+  color: #8ecae6;
+  background: #181818;
+}
+.custom-bangs-section {
+  margin-top: 3em;
+  background: #202020;
+  border-radius: 10px;
+  padding: 1.5em 1em 2em 1em;
+  box-shadow: 0 2px 8px #0002;
+}
+.custom-bangs-section h2 {
+  color: #8ecae6;
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+.add-bang-form {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+#bang-key, #bang-url {
+  background: #232323;
+  border: none;
+  color: #eaeaea;
+  font-size: 1em;
+  padding: 0.4em 0.7em;
+  border-radius: 6px;
+  outline: none;
+}
+#bang-key {
+  width: 60px;
+}
+#bang-url {
+  width: 180px;
+}
+#add-bang-btn {
+  background: #232323;
+  border: none;
+  color: #8ecae6;
+  font-size: 1em;
+  padding: 0.4em 0.9em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+#add-bang-btn:hover {
+  background: #181818;
+  color: #eaeaea;
+}
+.bangs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.bangs-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #232323;
+  border-radius: 6px;
+  margin-bottom: 0.4em;
+  padding: 0.5em 1.2em;
+  color: #eaeaea;
+  font-size: 1.3em;
+}
+.delete-bang-btn {
+  background: none;
+  border: none;
+  color: #e57373;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-left: 0.7em;
+  transition: color 0.2s;
+}
+.delete-bang-btn:hover {
+  color: #ff5252;
+}
+.credit {
+  text-align: center;
+  color: #888;
+  font-size: 1.2em;
+  margin-top: 2.5em;
+}
+.credit a {
+  color: #8ecae6;
+  text-decoration: underline;
+}
+body[data-newtab] h1 {
+  font-size: 4em;
+}
+body[data-newtab] p {
+  font-size: 1.7em;
+}
+body[data-newtab] .unduck-search-form {
+  margin-top: 3em;
+}
+body[data-newtab] #unduck-search-input {
+  font-size: 2em;
+  padding: 1em 2em;
+  width: 600px;
+}
+body[data-newtab] #unduck-search-btn {
+  font-size: 2.2em;
+  padding: 1em 2em;
+}
+body[data-newtab] .credit {
+  font-size: 1.5em;
+  margin-top: 3em;
+}
+body[data-newtab] #recent-sites-section {
+  margin-top: 2.5em;
+  text-align: center;
+}
+body[data-newtab] #recent-sites-section h2 {
+  color: #8ecae6;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+body[data-newtab] .recent-sites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.2em;
+  margin: 0 auto;
+  max-width: 900px;
+}
+body[data-newtab] .recent-site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #232323;
+  border-radius: 12px;
+  padding: 1.1em 1.3em;
+  width: 110px;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+body[data-newtab] .recent-site:hover {
+  background: #181818;
+  box-shadow: 0 4px 16px #0004;
+}
+body[data-newtab] .recent-site-favicon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.7em;
+  border-radius: 8px;
+  background: #181818;
+  object-fit: contain;
+}
+body[data-newtab] .recent-site-title {
+  color: #eaeaea;
+  font-size: 1.1em;
+  margin-bottom: 0.2em;
+  word-break: break-all;
+}
+body[data-newtab] .recent-site-url {
+  color: #8ecae6;
+  font-size: 0.95em;
+  word-break: break-all;
+} 
