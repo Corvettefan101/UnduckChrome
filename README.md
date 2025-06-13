@@ -1,5 +1,5 @@
 # UnduckChrome
-UnduckChrome is a powerful Chrome extension that brings the lightning-fast, custom search experience of [unduck.link](https://unduck.link/) by Theo Brownlee directly to your browser. Say goodbye to slow searches and hello to instant, customizable results with a sleek in-extension UI and a beautiful, optional new tab page.
+UnduckChrome is a powerful Chrome extension that brings the lightning-fast, custom search experience of [unduck.link](https://unduck.link/) by Theo Brownlee directly to your chromed based browser. Say goodbye to slow searches and hello to instant, customizable results with a sleek in-extension UI and a beautiful, optional new tab page.
 ## ✨ Features
 
 *   **In-Extension URL Bar:** Access the Unduck search bar directly from your extension's popup. No need to open a new tab – just click the UnduckChrome icon and search!
