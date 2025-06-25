@@ -1,5 +1,5 @@
 # UnduckChrome
-UnduckChrome is a powerful Chrome extension that brings the lightning-fast, custom search experience of [unduck.link](https://unduck.link/) by Theo Brownlee directly to your chrome based browser. Say goodbye to slow searches and hello to instant, customizable results with a sleek in-extension UI and a beautiful, optional new tab page.
+UnduckChrome is a powerful Chrome extension that brings the lightning-fast, custom search experience of [unduck.link](https://unduck.link/) by Theo Browne directly to your chrome based browser. Say goodbye to slow searches and hello to instant, customizable results with a sleek in-extension UI and a beautiful, optional new tab page.
 ## ✨ Features
 
 *   **In-Extension URL Bar:** Access the Unduck search bar directly from your extension's popup. No need to open a new tab – just click the UnduckChrome icon and search!
@@ -13,7 +13,7 @@ UnduckChrome is a powerful Chrome extension that brings the lightning-fast, cust
 *   **Toggle New Tab Page:** Easily switch the custom new tab page on or off from the extension's options, giving you full control over your browsing environment.
     <p align="left">
       <img src="https://github.com/user-attachments/assets/e41008dc-0987-4e19-bb74-2abe6393ccfc" alt="Screenshot of UnduckChrome's settings page with new tab toggle">
-*   **Built on Unduck.link:** Inherits the core search logic and speed of Theo Brownlee's original and innovative [unduck.link](https://unduck.link/) service.
+*   **Built on Unduck.link:** Inherits the core search logic and speed of Theo Brownes original and innovative [unduck.link](https://unduck.link/) service.
 
 ## 🚀 Installation
 
@@ -66,7 +66,7 @@ Utilize Unduck's original powerful custom bangs and ones you create yourself!
 
 ## 🙏 Acknowledgements
 
-*   **Theo Brownlee:** For the brilliant original concept and implementation of [unduck.link](https://unduck.link/). This extension builds upon his innovative work and is meant as an expansion on the original project.
+*   **Theo Browne:** For the brilliant original concept and implementation of [unduck.link](https://unduck.link/). This extension builds upon his innovative work and is meant as an expansion on the original project.
 *   **Cursor:** For Vibe Coding this amazing extension with
 *   **Chat GPT 4.1:** The AI model utilized inside of Cursor to make this all happen
 *   **Gemini 2.5 Flash:** The AI model that assisted writing this readme up
